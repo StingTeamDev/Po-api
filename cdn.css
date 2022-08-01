@@ -5,17 +5,6 @@
 ~> Dev By     	 : Sting Dev  - Facebook Page ->  https://www.facebook.com/stingweb.eg
 ~> Desgin URL    : sting-web.blogspot.com
    -------------------------------------- */
-   
-   /* -------------------------------------
-~> Name Temp     : Posts Sting Web Api
-~> Version	     : V 1.0 beta
-~> Last Updated  : 10-08-2022 : 12:37 AM
-~> Dev By     	 : Sting Dev  - Facebook Page ->  https://www.facebook.com/stingweb.eg
-~> Desgin URL    : sting-web.blogspot.com
-   -------------------------------------- */
-
-   
-/*================= Start Api Css - Sting Web ===================*/
 
 :root {
     --BG: #0066cc;
@@ -97,7 +86,7 @@
 
 a.linkPostApi {
     grid-template-columns: 1fr;
-    font-size: 12px;
+    font-size: 12.3px;
     text-align: center;
     padding: 3px 3px;
     color: var(--CO);
@@ -114,14 +103,14 @@ a.linkPostApi {
     margin-left: 10px;
 }
 
-div#TableAutoSting1,
-div#TableAutoSting2,
-div#TableAutoSting3,
-div#TableAutoSting4,
-div#TableAutoSting5,
-div#TableAutoSting6,
-div#TableAutoSting7,
-div#TableAutoSting8 {
+div#PAutoSting1,
+div#PAutoSting2,
+div#PAutoSting3,
+div#PAutoSting4,
+div#PAutoSting5,
+div#PAutoSting6,
+div#PAutoSting7,
+div#PAutoSting8 {
     display: inline-block;
     z-index: 1;
     border-radius: 7px;
@@ -132,16 +121,29 @@ div#TableAutoSting8 {
     width: 230px;
     background: var(--BT);
     box-shadow: 0 0 2px 0 #0a0d3714;
+    cursor: pointer;
 }
 
-#TableAutoSting1 img,
-#TableAutoSting2 img,
-#TableAutoSting3 img,
-#TableAutoSting4 img,
-#TableAutoSting5 img,
-#TableAutoSting6 img,
-#TableAutoSting7 img,
-#TableAutoSting8 img {
+div#PAutoSting1:hover,
+div#PAutoSting2:hover,
+div#PAutoSting3:hover,
+div#PAutoSting4:hover,
+div#PAutoSting5:hover,
+div#PAutoSting6:hover,
+div#PAutoSting7:hover,
+div#PAutoSting8:hover {
+    transform: scale(1.03);
+}
+
+
+#PAutoSting1 img,
+#PAutoSting2 img,
+#PAutoSting3 img,
+#PAutoSting4 img,
+#PAutoSting5 img,
+#PAutoSting6 img,
+#PAutoSting7 img,
+#PAutoSting8 img {
     display: block;
     width: 300px;
     height: 200px;
@@ -149,7 +151,7 @@ div#TableAutoSting8 {
 }
 
 a.linkPostApi:hover {
-    color: #0066cc;
+    color: #931800;
 }
 
 
@@ -160,14 +162,14 @@ a.linkPostApi:hover {
         gap: 7px 10px;
     }
 
-    div#TableAutoSting1,
-    div#TableAutoSting2,
-    div#TableAutoSting3,
-    div#TableAutoSting4,
-    div#TableAutoSting5,
-    div#TableAutoSting6,
-    div#TableAutoSting7,
-    div#TableAutoSting8 {
+    div#PAutoSting1,
+    div#PAutoSting2,
+    div#PAutoSting3,
+    div#PAutoSting4,
+    div#PAutoSting5,
+    div#PAutoSting6,
+    div#PAutoSting7,
+    div#PAutoSting8 {
         display: inline-block;
         z-index: 1;
         border-radius: 7px;
@@ -180,14 +182,14 @@ a.linkPostApi:hover {
         height: 95px;
     }
 
-    #TableAutoSting1 img,
-    #TableAutoSting2 img,
-    #TableAutoSting3 img,
-    #TableAutoSting4 img,
-    #TableAutoSting5 img,
-    #TableAutoSting6 img,
-    #TableAutoSting7 img,
-    #TableAutoSting8 img {
+    #PAutoSting1 img,
+    #PAutoSting2 img,
+    #PAutoSting3 img,
+    #PAutoSting4 img,
+    #PAutoSting5 img,
+    #PAutoSting6 img,
+    #PAutoSting7 img,
+    #PAutoSting8 img {
         height: 95px;
         width: 33%;
         float: right;
@@ -232,45 +234,50 @@ a.linkPostApi:hover {
 }
 
 .contentv1{
-    background-color: #fff;
+    background-color: var(--BG3);
     width: 95%;
     max-width: 1000px;
     height: 100%;
-    max-height: 500px;
+    max-height: 750px;
     margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
     border-radius: 12px;
-    padding: 10px;
+    padding: 5px;
     display: grid;
     grid-template-columns: 1fr;
 }
 
 .contentv1 h1 {
-    background-color: #eee;
+    background-color: var(--BR);
     border-radius: 8px;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 17px;
     padding: 5px 10px;
     width: 90%;
     display: grid;
     margin-right: auto;
     margin-left: auto;
+    height: 30px;
 }
 
-.contentv1 img{
-    width: 95% !important;
-    height: 500px !important;
+.contentv1 img {
+    width: 40% !important;
+    height: 250px !important;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    justify-self: center;
 }
 
 .contentv1 p {
     font-size: 15px;
+    width: 94%;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contentv1 button {
-    background: red;
+    background: #931800;
     color: #fff;
     font-size: 20px;
     margin-bottom: 15px;
@@ -283,13 +290,16 @@ a.linkPostApi:hover {
     justify-self: center;
 }
 
+
 @media screen and (max-width: 720px) {
     .contentv1{
         width: 90%;
-        max-height: 750px;
+        max-height: 780px;
     }
-    .contentv1 img{
-        height: 250px !important;
+    .contentv1 img {
+        height: 125px !important;
+        width: 50% !important;
+        margin-top: 10px;
     }
     .contentv1 button {
         width: 200px;
@@ -297,9 +307,9 @@ a.linkPostApi:hover {
     }
     .contentv1 h1 {
         margin-bottom: 0;
+        font-size: 14px;
+        height: 52px;
     }
     
 
 }
-
-
